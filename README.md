@@ -17,4 +17,7 @@ Go언어 하나로 퉁치기!
 
 ### Go 설치
 - https://go.dev/dl/ 에서 OS 플랫폼에 맞는 설치본 다운로드 및 섪치
-	- 
+
+	<img src="https://raw.githubusercontent.com/hugoMGSung/study-go/main/images/go001.png" width="730">
+
+
