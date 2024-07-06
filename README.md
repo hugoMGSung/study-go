@@ -34,30 +34,37 @@ Go언어 하나로 퉁치기!
 	- 출력 탭 확인, 모두 설치 후 [info] All tools successfully installed. You are ready to Go. :) 표시되면 완료
 
 
-### GO 우선 환경
+### GO 개발환경 시작해보기
 - GOPATH 설정 경로에 bin, pkg, src 폴더를 생성
 	- echo %GOPATH% 로 확인 -> %USERPROFILE%\go
 
-- Visual Studio에 src 폴더를 새 창으로 열기
-
-- 프로젝트 실행
-	- 명령 프롬프트 > Go: Initialize go.mod 선택
-	- Enter module name > hugo83.com/hello
-	- go.mod 파일 확인
+- Visual Studio Code 실행
+	- go-app 폴더 생성
 	- main.go 생성
-
+	- 터미널에서 명령어 실행
+		```shell
+		PS D:\01_Programming\100_HugoBank\Mine\study-go> go mod init go-app
+		go: creating new go.mod: module go-app
+		go: to add module requirements and sums:
+				go mod tidy
+		```
+	- go.mod 파일 생성 확인
+	- main.go 에 코드 작성
 		```go
 		package main
 
-		import (
-			"fmt"
-		)
+		import "fmt"
 
 		func main() {
-			fmt.Println("Hello, Go!")
+			name := "Go!"
+			fmt.Println("VS Code for", name)
 		}
 		```
-
-	- Ctrl + F5 실행
+	- Ctrl + F5로 실행
 
 		<img src="https://raw.githubusercontent.com/hugoMGSung/study-go/main/images/go003.png" width="730">
+
+- 디버깅
+	- 브레이크포인트 토글 후 F5 실행
+
+		<img src="https://raw.githubusercontent.com/hugoMGSung/study-go/main/images/go004.png" width="730">
