@@ -15,6 +15,22 @@ Go언어 하나로 퉁치기!
 	- C++과 같은 정적 타입 언어이며, Java/C#과 같이 가비지컬렉션이 있는 객체지향 언어임
 	- 최소한의 키워드 만으로 개발이 가능하게 만듦
 
+- Go의 사용사례
+	- 시스템 수준의 애플리케이션
+	- 웹 앱
+	- 클라우드 네이티브 애플리케이션(도커, 쿠버네티스 등)
+	- 분산 시스템
+	- 데이터베이스 등
+
+### Go를 배우기
+
+#### Go Playground
+- 웹사이트 제공 
+	- https://go.dev/play/
+
+- 로컬 컴퓨터에 설치
+	- OS 플랫폼별 설치
+
 ### Go 설치
 - https://go.dev/dl/ 에서 OS 플랫폼에 맞는 설치본 다운로드 및 섪치
 
@@ -68,3 +84,46 @@ Go언어 하나로 퉁치기!
 	- 브레이크포인트 토글 후 F5 실행
 
 		<img src="https://raw.githubusercontent.com/hugoMGSung/study-go/main/images/go004.png" width="730">
+
+- 콘솔에서 실행
+	- > go run main.go
+
+- 실행파일 빌드
+	- > go build main.go
+
+### 기본 학습하기
+
+#### 프로젝트에 관하여
+- go mod init
+	- go 모듈 초기화 명령
+	- github 등에 모듈을 공유하기 위해서는 공식모듈명 사용 추천
+		- 예) go mod init hugo83.com/goprog 
+
+#### 소스코드 분석
+- main.go
+	- 1번 라인
+		```go
+		package main
+		```
+
+		- 실행가능한 앱임을 Go에게 알림. 모든 실행 파일에는 이 첫번째 라인이 있음
+
+	- 3번 라인
+		```go
+		import "fmt"
+		```
+
+		- fmt 패키지를 여기에서 사용하겠음을 선언. 
+		- fmt는 표준 라이브러리 [Go 패키지 설명](https://pkg.go.dev/fmt) 에 설명 발췌
+			- Package fmt implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
+			- fmt 패키지는 C의 printf 및 scanf와 유사한 기능을 사용하여 형식화된 I/O를 구현함. '동사' 형식은 C에서 파생되었지만 더 간단함.
+
+	- 5번 라인
+		```go
+		func main() {
+		```
+
+		- 메인 함수 선언. 보통 Entry point(시작점) 으로 불림. { 는 코드블럭의 시작을 알림
+
+	- 6번 라인
+		
