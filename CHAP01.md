@@ -67,3 +67,143 @@
 	```go
 	const PI float32 = 3.142592
 	```
+
+### 데이터형
+- 데이터형 종류
+	1. bool
+	2. string
+	3. int, int8, int16, int32, int64, uint, ... uint64, uintptr
+	4. float32, float64, complex64, complex128
+	5. byte, rune(= int32, 유니코드 코드포인트)
+
+- String
+	1. " " 기본 문자열
+	2. ` ` 여러줄 문자열
+
+- Type Conversion
+	1. 기본적인 방법
+	```go
+	func main() {
+		var i int = 100
+		var u uint = uint(i)
+		var f float32 = float32(i)  
+		fmt.Println(f, u)
+	
+		str := "ABC"
+		bytes := []byte(str)
+		str2 := string(bytes)
+		fmt.Println(bytes, str2)
+	}
+	```
+
+	2. strconv 패키지 사용 - 패키지를 import하고 사용하지 않으면 오류발생!
+	```go
+	package main
+
+	import (
+		"fmt"
+		"strconv"
+	)
+
+	func main() {
+		i, _ := strconv.Atoi("-42")
+		s := strconv.Itoa(-42)
+		fmt.Println(i, s)
+	}
+	```
+
+### 연산자
+- 기본연산자는 다른 언어들과 동일함
+	1. Bitwise 연산자
+		```go
+		z = (x & y) >> 2
+		```
+
+	2. 포인터 연산자
+		```go
+		var a int = 12
+		var p = &a  // a의 주소 할당
+		fmt.Println(*p) // p가 가리키는 주소의 실제값 12
+		```
+
+### 조건문
+
+#### if
+- 기본 내용 생략
+- Optional Statement
+	```go
+	var i int = 1
+	if v := i * 3; v < 10 {
+		fmt.Println(v)
+	}
+	```
+
+#### switch
+- 여러값 비교
+	```go
+	func grade(score int) {
+		switch {
+		case score >= 90:
+			fmt.Println("A")
+		case score >= 80:
+			fmt.Println("B")
+		case score >= 70:
+			fmt.Println("C")
+		case score >= 60:
+			fmt.Println("D")
+		default:
+			fmt.Println("No Hope")
+		}
+	}   
+	```
+
+- 타입비교
+	```go
+	switch v.(type) {
+	case int:
+		fmt.Println("int")
+	case bool:
+		fmt.Println("bool")
+	case string:
+		fmt.Println("string")
+	default:
+		fmt.Println("unknown")
+	} 
+	```
+
+- fallthrough - 아래 case 도 실행
+
+#### for
+- 대표 반복문
+	```go
+	func main() {
+		sum := 0
+		for i := 1; i <= 100; i++ {
+			sum += i
+		}
+		fmt.Println(sum) // 5050
+	}
+	```
+
+- 무한루프
+	```go
+	func main() {
+		for {
+			fmt.Println("이건 실행 하지마셈~")
+		}
+	}
+	```
+
+- for range - 컬렉션에 적합
+	```go
+	heros := []string { "IronMan", "Captain America", "Thor", "Black Widow" }
+
+	for index, hero := range heros {
+		fmt.Println(index, hero)
+	}
+	```
+
+- break, continue, goto 생략
+
+
+### 함수
