@@ -207,3 +207,22 @@
 
 
 ### 함수
+- Function, Method, Process 등등의 이름으로 부르는 코드블럭 단위 실행 유닛
+	```go
+	func main() {
+		name := "Hugo"
+		sayHello(name)
+	}
+
+	func sayHello(name string) {
+		fmt.Println("Hello", name)
+	}
+	
+	```
+
+- 전달 방식
+	- Pass By Value - 값을 전달하는 방식
+	- Pass By Reference - &를 사용, 주소를 전달하는 방식
+
+- 가변 매개변수 함수
+	- 한 개 이상의 매개변수(인자)를 함수에 전달할 때

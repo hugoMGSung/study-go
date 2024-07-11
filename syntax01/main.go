@@ -40,4 +40,11 @@ func main() {
 	for index, hero := range heros {
 		fmt.Println(index, hero)
 	}
+
+	name := "Hugo"
+	sayHello(name)
+}
+
+func sayHello(name string) {
+	fmt.Println("Hello", name)
 }
