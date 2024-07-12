@@ -6,11 +6,13 @@ import (
 )
 
 func main() {
+	fmt.Println("변수/상수 학습")
+
 	var (
-		firstName string = "Hugo"
+		firstName  string = "Hugo"
 		middleName string = "MG"
-		lastName string = "Sung"
-		age int = 48
+		lastName   string = "Sung"
+		age        int    = 48
 	)
 
 	fmt.Println(firstName, middleName, lastName, age)
@@ -21,10 +23,10 @@ func main() {
 	var defaultBool bool
 	var defaultString string
 	fmt.Println(defaultInt, defaultFloat32, defaultFloat64, defaultBool, defaultString)
-	
+
 	i, _ := strconv.Atoi("-42")
-    s := strconv.Itoa(-42)
-    fmt.Println(i, s)
+	s := strconv.Itoa(-42)
+	fmt.Println(i, s)
 
 	sum := 0
 	for i := 1; i <= 100; i++ {
@@ -35,7 +37,7 @@ func main() {
 	// for {
 	// 	fmt.Println("이건 실행 하지마셈~")
 	// }
-	heros := []string { "IronMan", "Captain America", "Thor", "Black Widow" }
+	heros := []string{"IronMan", "Captain America", "Thor", "Black Widow"}
 
 	for index, hero := range heros {
 		fmt.Println(index, hero)
