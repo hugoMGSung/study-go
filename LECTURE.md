@@ -113,4 +113,26 @@
 
 	<img src="./images/img002.png" width="200">
 
+#### 명령팔레트 실행
+- Ctrl + Shift + P
+	- Go: Initialize go.mod 클릭
+	- main 입력
+
+- 루트폴더에 go.mod 확인
+
+#### hellogo.go 생성
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, Go!!")
+}
+```
+
+- Ctrl + F5 로 디버그 콘솔의 실행결과 확인
+
+	<img src="./images/go003.png" width="800">
+
 ### 기초문법
