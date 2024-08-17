@@ -2,7 +2,7 @@
 
 하나로 퉁치기!
 
-## [동강GO](./LECTURE.md)
+## [딴강GO](./LECTURE.md)
 
 ## Go 개요
 
