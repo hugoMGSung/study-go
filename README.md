@@ -2,6 +2,8 @@
 
 하나로 퉁치기!
 
+## [동강GO](./LECTURE.md)
+
 ## Go 개요
 
 ### Go란
@@ -91,6 +93,10 @@
 
 - 실행파일 빌드
 	- > go build main.go
+
+- fmt.Println()과 println() 차이
+	- fmt.Println()은 stdout 으로 표준 문자열 출력을 제공하는 함수. println()은 내장된 함수로 stderr를 출력해주는 내장함수
+	- 주로 println()은 디버깅 시 유용
 
 ### 기본 학습하기
 

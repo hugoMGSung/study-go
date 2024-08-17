@@ -28,4 +28,25 @@ func main() {
 
 	psn2 := person{"Doug", 42}
 	fmt.Println(psn2)
+
+	psn3 := person{name: "Ashley", age: 40}
+	fmt.Println(psn3)
+
+	// 생성자 함수 호출로 생성
+	dic := newDict()
+	dic.data[1] = "One"
+	dic.data[2] = "Two"
+
+	fmt.Println(dic)
+}
+
+type dict struct {
+	data map[int]string
+}
+
+// 생성자 함수
+func newDict() *dict {
+	d := dict{}
+	d.data = map[int]string{}
+	return &d
 }
