@@ -133,6 +133,6 @@ func main() {
 
 - Ctrl + F5 로 디버그 콘솔의 실행결과 확인
 
-	<img src="./images/go003.png" width="800">
+	<img src="./images/image003.png" width="800">
 
 ### 기초문법
