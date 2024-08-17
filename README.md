@@ -54,6 +54,35 @@
 
 
 ### GO 개발환경 시작해보기
+1. GO를 실행할 경로를 생성
+	- 하위에 bin, pkg, src 폴더 생성
+	- sysdm.cpl 시스템 속성 > 환경 변수로 진입
+	- 예전에는 GOROOT 변수가 등록되었으나 현재는 Path에 GO 실행경로가 등록됨
+	- GOROOT, GOPATH, GOBIN 변수명 등록
+
+	```shell
+	PS C:\> go env
+	set GOMODULE=
+	set GOBIN=C:\go_bank\bin
+	...
+	set GOPATH=C:\go_bank
+	...
+	set GOROOT=C:\Program Files\Go\
+	``` 
+
+2. Mac의 경우
+	- 나머지 설치는 유사
+	- 설치 완료 후 위와 동일한 폴더와 pkg, bin, src 생성
+	- nano ~/.bash_profile 실행
+	```shell
+	export GOPATH="/Users/username/Documents/go_bank
+	export GOBIN=$GOPATH/bin
+	
+	export PATH="/Users/....:$PATH:$GOPATH:$GOBIN"
+	```
+	- 작성 후 source ~/.bash_profile 실행
+
+
 - GOPATH 설정 경로에 bin, pkg, src 폴더를 생성
 	- echo %GOPATH% 로 확인 -> %USERPROFILE%\go
 
