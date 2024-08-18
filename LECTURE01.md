@@ -1,4 +1,4 @@
-## GO언어 베이직
+## Go언어 베이직
 
 ### TIOBE PL Ranking
 - https://www.tiobe.com/tiobe-index/
@@ -98,6 +98,8 @@
 	```
 	- 작성 후 source ~/.bash_profile 실행
 
+3. 아무것도 안해도 됨!
+
 #### 추가 플러그인
 - Visual Studio Code 확장팩 설치
 	- Go 설치
@@ -110,6 +112,7 @@
 #### 재부팅 후
 - VS Code를 열고 지정한 개발소스 폴더를 오픈하면
 	- bin과 pkg 폴더에 인터넷으로 부터 다운받은 패키지와 이를 컴파일한 실행파일이 생김
+	- go get -u golang.org/x/tools/cmd/goimports 등...
 
 	<img src="./images/img002.png" width="200">
 
@@ -121,6 +124,8 @@
 - 루트폴더에 go.mod 확인
 
 #### hellogo.go 생성
+- src/section1/hellogo.go 파일 생성
+
 ```go
 package main
 
@@ -135,4 +140,26 @@ func main() {
 
 	<img src="./images/img003.png" width="800">
 
-### 기초문법
+- 터미널에서 소스 위치로 이동
+
+	```shell
+	> go run hellogo.go
+	```
+
+#### 실행파일 생성
+- 터미널에서 소스 위치로 이동
+
+	```shell
+	> go build hellogo.go
+	```
+	- hellogo.exe 실행파일 확인가능
+
+- 설치명령어
+	```shell
+	> go install
+	```
+	- GOPATH의 bin 폴더에 section1.exe 파일 확인
+
+	<img src="./images/img004.png" width="730">
+
+[다음](./LECTURE02.md)
