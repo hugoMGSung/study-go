@@ -38,3 +38,18 @@
 - 공식 레퍼런스 - https://go.dev/doc/effective_go#initialization 확인
 
 <img src="./images/img005.png" width="730">
+
+
+#### 기본문법
+
+##### 수 타입
+- 정수 
+- 정수의 문자화 
+	- 아스키코드 - https://namu.wiki/w/%EC%95%84%EC%8A%A4%ED%82%A4%20%EC%BD%94%EB%93%9C
+	- 유니코드 - https://namu.wiki/w/%ED%98%84%EB%8C%80%20%ED%95%9C%EA%B8%80%EC%9D%98%20%EB%AA%A8%EB%93%A0%20%EA%B8%80%EC%9E%90/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C
+
+##### 문자열 타입
+- 여기서 부터...
+
+##### Boolean 타입
+- 참거짓에 대한 데이터형

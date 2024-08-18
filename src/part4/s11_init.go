@@ -9,7 +9,7 @@ func init() {
 	fmt.Println("초기화메서드 - 최초실행!")
 }
 
-func main() {
+func main11() {
 	fmt.Println("카운트다운")
 
 	for i := 10; i > 0; i-- {
