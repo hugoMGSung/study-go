@@ -36,4 +36,5 @@
 - init()은 여러개를 사용해도 무방하다
 
 - 공식 레퍼런스 - https://go.dev/doc/effective_go#initialization 확인
-![init](./images/img005.png)
+
+<img src="./images/img005.png" width="730">
