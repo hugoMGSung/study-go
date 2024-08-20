@@ -64,6 +64,7 @@
 	```
 
 #### GO 환경설정 진행
+- https://github.com/golang-standards/project-layout/blob/master/README_ko.md 
 - 현재는 아래의 작업을 하지않아도 진행할 수 있도록 환경이 바뀌어 있지만, 전체 구조 확인을 위해 따라하는 것도 좋은 방법
 
 1. GO를 실행할 경로를 생성
