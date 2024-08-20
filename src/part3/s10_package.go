@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	cust "main/src/part4/mylib"
+	cust "main/src/part3/mylib"
 
 	//"main/src/part4/mylib"
 	"os"
