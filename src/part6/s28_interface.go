@@ -70,7 +70,7 @@ func printValue(s interface{}) {
 	fmt.Println(s)
 }
 
-func main() {
+func main28() {
 	var t1 test // 빈 인터페이스는 nil 리턴
 	fmt.Println(t1)
 
