@@ -17,7 +17,7 @@ func execute(name string) {
 	fmt.Println(name, "ended", time.Now())
 }
 
-func main() {
+func main32() {
 	execute("thread1")
 	fmt.Println("Main Routine started", time.Now())
 	go execute("thread2")
