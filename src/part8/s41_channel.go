@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	fmt.Println("채널 심화")
+	fmt.Println("채널 심화1")
 }
 
 func sendOnly(ch chan<- int, cnt int) { // 발신전용
@@ -25,7 +25,7 @@ func recvOnly(ch <-chan int) { // 수신전용
 	fmt.Println(<-ch)
 }
 
-func main() {
+func main41() {
 	// 채널, 함수등 매개변수에 수발신 전용 채널 지정
 	// 수신 전용에 값을 넣으면 패닉 발생
 	ch := make(chan int)
