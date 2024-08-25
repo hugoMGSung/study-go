@@ -36,3 +36,15 @@
 	- RWMutex(쓰기 락) - 쓰는 도중 다른곳에서 읽기X, 쓰기 전부 방어
 	- RMutex(읽기 락) - 읽기 시도중 값 변경 방지
 
+- 고루틴 대기와 깨우기
+
+##### Once
+- 고루틴 한번만 실행
+
+##### WaitGroup
+- 고루틴이 종료될 때까지 대기 가능
+- Add(고루틴 추가), Done(작업종료 알림), Wait(고루틴 종료시까지 대기)
+
+##### 원자성 보장
+- All or nothing!
+- https://golang.org/pkg/sync/atomic

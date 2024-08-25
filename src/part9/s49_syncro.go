@@ -11,7 +11,7 @@ func init() {
 	fmt.Println("동기화 - 뮤텍스 상호배제")
 }
 
-func main() {
+func main49() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	data := 0
