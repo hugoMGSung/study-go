@@ -48,3 +48,10 @@
 ##### 원자성 보장
 - All or nothing!
 - https://golang.org/pkg/sync/atomic
+
+#### 에러처리 - 예외처리
+- 소프트웨어 품질 향상에 가장 중요한 것
+- 소프트웨어 에러처리가 제대로 안된 신뢰성 없는 프로그램은 회사의 존망에도 영향을 줌!
+- 기본적으로 error 패키지에서 error 인터페이스 제공
+- type error interface { Error() string }
+- 메서드 마다 리턴타입 2개, 리턴값과 에러

@@ -11,7 +11,7 @@ func init() {
 	fmt.Println("동기화 - 원자성 보장!")
 }
 
-func main() {
+func main54() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	var cnt int64 = 0
