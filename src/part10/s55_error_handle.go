@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	fmt.Println("에러처리")
+	fmt.Println("에러처리1")
 }
 
 func main55() {

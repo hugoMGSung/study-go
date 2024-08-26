@@ -2,9 +2,7 @@ package main
 
 import (
 	"fmt"
-	cust "main/src/part3/mylib"
-
-	//"main/src/part4/mylib"
+	custom "main/src/part03/mylib"
 	"os"
 )
 
@@ -19,5 +17,5 @@ func main10() {
 	//fmt.Println("10은 양수인가?", mylib.TestPlus(10))
 
 	// mylib의 Alias
-	fmt.Println("10은 양수인가?", cust.TestPlus(10))
+	fmt.Println("10은 양수인가?", custom.TestPlus(10))
 }
