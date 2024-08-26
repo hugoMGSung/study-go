@@ -37,6 +37,14 @@
 	...
 	```
 
+##### godoc 에러 
+- 아래 명령어로 실행
+	```shell
+	> go install golang.org/x/tools/cmd/godoc@latest
+	```
+
+- 사용자 시스템정보에 %GOPATH%\bin 추가
+
 #### Visual Studio Code 설치
 - 기본 설치 - 개발툴 경로 지정 추천 (ex, C:\DEV\IDE\Microsoft\Microsoft VS Code)
 - Visual Studio Code 확장팩 설치

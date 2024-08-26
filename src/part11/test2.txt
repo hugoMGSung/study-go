@@ -1,0 +1,4 @@
+Mie Golang!
+ File Write Test1!
+Mie Golang!
+ File Write Test2!

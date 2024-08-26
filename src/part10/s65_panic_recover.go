@@ -27,7 +27,7 @@ func fOpen(filename string) {
 	defer f.Close()
 }
 
-func main() {
+func main65() {
 	// Go/Recover 최종
 	fmt.Println("Main 시작")
 	fOpen("./unknown.txt")
