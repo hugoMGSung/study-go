@@ -36,7 +36,7 @@ func customErrCheck(err error) {
 // 동기화를 위한 작업 그룹 선언
 var wg sync.WaitGroup
 
-func main84() {
+func main75() {
 	// 메인 페이지 get방식 요청
 	resp, err := http.Get(urlRoot) // request, response
 	customErrCheck(err)

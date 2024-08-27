@@ -10,7 +10,7 @@ func init() {
 	fmt.Println("패키지 문서화")
 }
 
-func main80() {
+func main71() {
 	// 사용자 패키지 작성 및 Go 문서화
 	// 기준은 GOPATH/src
 	// package 패키지 이름

@@ -10,7 +10,7 @@ func init() {
 	fmt.Println("패키지 문서화")
 }
 
-func main81() {
+func main72() {
 	// 외부 저장소 설치
 	// 1. import 선언 후 폴더 이동 후 go get 설치
 	// 2. go get 패키지 주소로 설치

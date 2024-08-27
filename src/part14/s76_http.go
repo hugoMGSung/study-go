@@ -10,14 +10,14 @@ func init() {
 	fmt.Println("HTTP 예제")
 }
 
-func main86() {
-	req, err := http.NewRequest("GET", "https://www.yna.co.kr/", nil)
-	errCheck(err)
+func errCheck(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
 
-	req.Header.Add("User-Agent", "Tester")
-
-	client := &http.Client{}
-	resp, err := client.Do(req)
+func main76() {
+	resp, err := http.Get("https://www.yna.co.kr/")
 	errCheck(err)
 
 	defer resp.Body.Close()

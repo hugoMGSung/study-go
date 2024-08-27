@@ -15,7 +15,7 @@ type Person struct {
 	Age  int
 }
 
-func main87() {
+func main78() {
 	// 간단한 http.PostForm 예제
 	resp, err := http.PostForm("https://httpbin.org/post", url.Values{"Name": {"Hugo"}, "Age": {"50"}})
 	if err != nil {

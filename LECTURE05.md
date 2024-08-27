@@ -55,6 +55,11 @@
 
 - MySQL 사용
 	- go get github.com/go-sql-driver/mysql
+	- CRUD 
+
+#### 웹서버
+- Go의 표준 패키지인 net/http 패키지는 웹 관련 서버 (및 클라이언트) 기능을 제공
+- ListenAndServe(), Handle(), HandleFunc() 등
 
 #### 기타
 - 추천 사이트

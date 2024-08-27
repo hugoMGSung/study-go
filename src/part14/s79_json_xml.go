@@ -18,7 +18,7 @@ type Heros struct {
 	Hero []Hero
 }
 
-func main88() {
+func main79() {
 	// Go 데이타
 	hero := Hero{"IronMan", 50, false}
 

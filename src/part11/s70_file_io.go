@@ -10,7 +10,7 @@ func init() {
 	fmt.Println("파일 입출력3")
 }
 
-func main79() {
+func main70() {
 	file, err := os.OpenFile("test2.txt", os.O_CREATE|os.O_RDWR, os.FileMode(0777))
 
 	//bufio 파일 쓰기 예제

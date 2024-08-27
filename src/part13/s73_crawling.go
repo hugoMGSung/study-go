@@ -9,7 +9,7 @@ import (
 	"golang.org/x/net/html/atom"
 )
 
-func main82() {
+func main73() {
 	// request and parse the front page
 	resp, err := http.Get("https://news.ycombinator.com/")
 	if err != nil {

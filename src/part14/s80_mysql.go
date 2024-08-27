@@ -8,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func main89() {
+func getData() {
 	db, err := sql.Open("mysql", "madang:madang@tcp(127.0.0.1:3306)/madangdb")
 	if err != nil {
 		log.Fatal(err)

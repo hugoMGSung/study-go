@@ -8,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func main90() {
+func main81() {
 	defer func() {
 		if r := recover(); r != nil {
 			fmt.Println("DB 오류!", r)
