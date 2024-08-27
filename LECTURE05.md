@@ -84,7 +84,7 @@
 #### 웹 프레임워크
 - https://velog.io/@yeongsummer/Golang-Golang%EC%9C%BC%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B01.-Go-Web-Framework 
 - 현재 사용/개발 중인 웹 프레임워크
-	- Gin - https://gin-gonic.github.io/gin
+	- Gin - https://gin-gonic.com/
 	- Revel - https://revel.github.io
 	- Gorilla - http://www.gorillatoolkit.org
 	- Beego	- http://beego.me
@@ -92,9 +92,23 @@
 	- GoCraft - https://github.com/gocraft/web
 	- Traffic - https://github.com/pilu/traffic
 
+- martini 라는 프레임워크에 비해 성능을 40배가까이 향상
+
 ##### Gin Web Framework
 - 설치
-	- 
+	- go get -u github.com/gin-gonic/gin
+
+- 작성 시 
+	```go
+	import "github.com/gin-gonic/gin"
+	```
+
+	<img src="./images/img011.png" width="700">
+
+##### GET, POST, PUT, PATCH, DELETE, OPTIONS
+- GET, POST, PUT, DELETE만 알아도 됨
+
+	<img src="./images/img02.png" width="730">
 
 #### 기타
 - 추천 사이트
