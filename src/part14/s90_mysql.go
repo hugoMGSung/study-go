@@ -69,9 +69,9 @@ func main90() {
 	defer stmt.Close()
 
 	// Prepared Statement 실행
-	_, err = stmt.Exec(1, 7050) //Placeholder 파라미터 순서대로 전달
+	_, err = stmt.Exec(8050, 1) //Placeholder 파라미터 순서대로 전달
 	checkError(err)
-	_, err = stmt.Exec(9, 7550)
+	_, err = stmt.Exec(8550, 9)
 	checkError(err)
 
 	rows1, err := db.Query(query)
