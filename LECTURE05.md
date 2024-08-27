@@ -61,6 +61,41 @@
 - Go의 표준 패키지인 net/http 패키지는 웹 관련 서버 (및 클라이언트) 기능을 제공
 - ListenAndServe(), Handle(), HandleFunc() 등
 
+	<img src="./images/img009.png" width="500">
+
+	<img src="./images/img008.png" width="700">
+
+- http.Handle() 
+- 정적파일 핸들러 사용
+
+- 웹 앱 정리
+	```shell
+	> tree
+	├── go.mod
+	├── public
+	│   ├── css
+	│   │   └── style.css
+	│   ├── index.html
+	│   └── js
+	│       └── timescript.js
+	└── webserver.go
+	```
+
+#### 웹 프레임워크
+- https://velog.io/@yeongsummer/Golang-Golang%EC%9C%BC%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B01.-Go-Web-Framework 
+- 현재 사용/개발 중인 웹 프레임워크
+	- Gin - https://gin-gonic.github.io/gin
+	- Revel - https://revel.github.io
+	- Gorilla - http://www.gorillatoolkit.org
+	- Beego	- http://beego.me
+	- Martini - https://github.com/go-martini/martini
+	- GoCraft - https://github.com/gocraft/web
+	- Traffic - https://github.com/pilu/traffic
+
+##### Gin Web Framework
+- 설치
+	- 
+
 #### 기타
 - 추천 사이트
 	- https://go.dev/doc/

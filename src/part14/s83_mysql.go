@@ -12,7 +12,7 @@ func init() {
 	fmt.Println("오랜만에 초기화, MySQL 삭제!")
 }
 
-func main() {
+func main83() {
 	db, err := sql.Open("mysql", "madang:madang@tcp(127.0.0.1:3306)/madangdb")
 	if err != nil {
 		log.Fatal(err)
