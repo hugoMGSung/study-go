@@ -108,7 +108,7 @@
 ##### GET, POST, PUT, PATCH, DELETE, OPTIONS
 - GET, POST, PUT, DELETE만 알아도 됨
 
-	<img src="./images/img12.png" width="730">
+	<img src="./images/img012.png" width="730">
 
 #### 기타
 - 추천 사이트
