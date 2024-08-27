@@ -35,7 +35,7 @@ func postHeros(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, newHero)
 }
 
-func main() {
+func main89() {
 	router := gin.Default()
 	router.GET("/heros", getHeros)
 	router.POST("/heros", postHeros)

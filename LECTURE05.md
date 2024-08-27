@@ -110,6 +110,16 @@
 
 	<img src="./images/img012.png" width="730">
 
+#### SMTP 이메일 전송
+- go get gopkg.in/gomail.v2
+
+
+#### Logging
+
+#### Unit Test
+
+#### 윈도우 서비스프로그램
+
 #### 기타
 - 추천 사이트
 	- https://go.dev/doc/
