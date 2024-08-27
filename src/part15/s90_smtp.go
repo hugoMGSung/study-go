@@ -10,7 +10,7 @@ func init() {
 	fmt.Println("SMTP 전송")
 }
 
-func main() {
+func main90() {
 	m := gomail.NewMessage()
 	m.SetHeader("From", "personar95@naver.com")
 	m.SetHeader("To", "personar95@gmail.com", "personar95@naver.com")

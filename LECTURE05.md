@@ -110,15 +110,25 @@
 
 	<img src="./images/img012.png" width="730">
 
-#### SMTP 이메일 전송
-- go get gopkg.in/gomail.v2
+##### Backend 개발
+[다음](./LECTURE06.md)
 
+#### SMTP 이메일 전송
+- 메일 패키지 설치
+	- go get gopkg.in/gomail.v2
 
 #### Logging
-
-#### Unit Test
+- 로그 출력/ 파일 저장
 
 #### 윈도우 서비스프로그램
+- golang.org/x/sys/windows/svc 에 있는 svc 패키지를 사용
+
+	```shell
+	> go build winService.go
+	> sc create winService binPath= c:\%GOPATH%\src\winService.exe
+	...
+	> sc delete winService
+	```
 
 #### 기타
 - 추천 사이트
