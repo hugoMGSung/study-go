@@ -55,7 +55,17 @@
 7. /service/user.go CRUD 함수 작성
 8. /repository/user.go CRUD 함수 작성
 9. /network/user.go CRUD 함수에서 service 메서드 사용
+10. /types/user.go CreateRequest 등 구조체 추가
+11. /network/user.go CRUD에 서비스 메서드 추가수정
+12. /types/utils.go ApiResponse 에 ErrCode 인터페이스 추가
+13. /repository/user.go의 Create 메서드 작성
 
+	<img src="./images/img015.png" width="750">
 
-
+14. PostMan에서 Get메서드 실행하면 위에서 입력한 데이터 확인가능
+15. /repository/user.go UD 메서드도 추가 작성
+16. /repository/user.go Delete 메서드의 에러코드 리턴에 사용하기 위해
+17. /types/errors/errors.go 작성
+18. /service/user.go Update메서드 수정
+19. /repository/user.gp Update 메서드 변경 작성
 
