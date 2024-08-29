@@ -39,6 +39,38 @@
 - HTTP POST
 
 #### JSON / XML
+- JSON 태그 기능
+	```go
+	type UserInfo struct {
+		UserID      int    `json:"user_id"`
+		Email       string `json:"email"`
+		Age         int    `json:"age"`
+		Blog        string `json:"blog"`
+		FaceBook    string `json:"facebook"`
+		Description string
+	}
+	data := UserInfo{
+		UserID:      1001,
+		Email:       "foo@example.com",
+		Blog:        "https://blog.example.com",
+		FaceBook:    "https://foo.facebook.com",
+		Description: "Hello World",
+	}
+	sndData, _ := json.Marshal(data)
+	fmt.Println(string(sndData))
+	```
+
+	```json
+	{
+		"Description" : "Hello World",
+		"age" : 0,
+		"blog" : "https://blog.example.com",
+		"email" : "foo@example.com",
+		"facebook" : "https://foo.facebook.com",
+		"user_id" : 1001
+	}
+
+	```
 
 #### DB연동
 -  표준패키지 database/sql을 사용
