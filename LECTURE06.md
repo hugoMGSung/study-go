@@ -28,7 +28,7 @@
 - 패키지 설치
 	- go get github.com/gin-gonic/gin
 
-##### 진행 순서
+##### 진행 순서1
 1. /init/main.go 기본 웹서버 실행 확인
 2. /config/config.go 구성설정 작성
 3. /init/cmd/cmd.go 작성
@@ -40,8 +40,21 @@
 
 	<img src="./images/img014.png" width="750">
 
-7. next
+7. /network/utils.go에 /network/root.go 에 있던 함수들 이전. Response관련 함수 추가
+8. /network/user.go에 u.router.okResponse 관련 추가
+9. /types/utils.go Reponse 구조체와 생성 함수 작성
+10. /types/user.go JSON으로 리턴하는 User구조체와 HTTP메서드 별 구조체 생성
 
+##### 진행 순서2
+1. /service/root.go에 서비스 구조체와 이를 싱글톤으로 실행하는 변수 선언. 생성자 작성
+2. /repository/root.go에 저장소 구초제, 싱글톤, 생성자 작성
+3. 네트워크에서는 서비스만, 서비스에서는 리포지토리만 접근 하도록 레이아웃 분리 
+4. /init/cmd/cmd.go Cmd 구조체에 리포지토리, 서비스 추가. NewCmd 생성내용에 추가
+5. /service/user.go 생성
+6. /repository/user.go 생성
+7. /service/user.go CRUD 함수 작성
+8. /repository/user.go CRUD 함수 작성
+9. /network/user.go CRUD 함수에서 service 메서드 사용
 
 
 
