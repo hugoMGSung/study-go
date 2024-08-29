@@ -57,7 +57,7 @@ func runBody(stopChan chan bool) {
 	}
 }
 
-func main() {
+func mainWinService() {
 	err := svc.Run("winSerivce", &dummyService{})
 	//err := debug.Run("winSerivce", &dummyService{}) //콘솔출력 디버깅시
 	if err != nil {
